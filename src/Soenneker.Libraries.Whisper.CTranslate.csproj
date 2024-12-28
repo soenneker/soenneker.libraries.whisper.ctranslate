@@ -41,4 +41,8 @@
         <None Include="..\icon.png" Pack="true" PackagePath="\" />
         <Content Include="Resources\whisper_ctranslate2.exe" Pack="true" PackageCopyToOutput="true" />
     </ItemGroup>
+	
+	<ItemGroup>
+        <None Remove="Resources\whisper_ctranslate2.exe" />
+    </ItemGroup>
 </Project>
