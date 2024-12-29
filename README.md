@@ -40,6 +40,20 @@ Use the following command in PowerShell to transcribe an input audio file:
 ```
 This command will automatically download the required model from HuggingFace if it’s not already available locally.
 
+### Subtitles Generation
+Generate subtitles (in SRT format) from an input audio file:
+
+```powershell
+./whisper-ctranslate2 input.mp3 --model medium --output-format srt
+```
+
+### Specify a Language
+If you know the language of the input audio, specify it to improve accuracy and speed:
+
+```powershell
+./whisper-ctranslate2 input.mp3 --model medium --language en
+```
+
 ### Help Command
 To see all available options and arguments:
 
