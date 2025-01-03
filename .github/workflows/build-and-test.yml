@@ -27,4 +27,4 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test test/Soenneker.Libraries.Whisper.CTranslate.Tests.csproj --no-restore --verbosity normal
+        run: dotnet test test/Soenneker.Libraries.Whisper.CTranslate.Tests/Soenneker.Libraries.Whisper.CTranslate.Tests.csproj --no-restore --verbosity normal
