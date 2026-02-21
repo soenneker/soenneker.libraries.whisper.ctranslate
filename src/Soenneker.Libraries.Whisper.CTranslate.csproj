@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
+<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
@@ -38,8 +38,11 @@
         <None Include="..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\icon.png" Pack="true" PackagePath="\" />
-        <Content Include="Resources\whisper_ctranslate2.exe" Pack="true" PackageCopyToOutput="true" 
-                 PackagePath="contentFiles\any\any\Resources\" BuildAction="None"/>
+        <None Include="Resources\**\*.*"
+              Pack="true"
+              PackageCopyToOutput="true"
+              PackagePath="contentFiles/any/any/Resources/%(RecursiveDir)"
+              BuildAction="None"/>
     </ItemGroup>
 	
 	<ItemGroup>
