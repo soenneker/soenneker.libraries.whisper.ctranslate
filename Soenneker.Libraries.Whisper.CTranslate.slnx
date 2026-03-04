@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/.github/">
+    <File Path=".github/renovate.json" />
+  </Folder>
+  <Folder Name="/.github/workflows/">
+    <File Path=".github/workflows/build-and-test.yml" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Soenneker.Libraries.Whisper.CTranslate.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Soenneker.Libraries.Whisper.CTranslate.Tests/Soenneker.Libraries.Whisper.CTranslate.Tests.csproj" />
+  </Folder>
+</Solution>
