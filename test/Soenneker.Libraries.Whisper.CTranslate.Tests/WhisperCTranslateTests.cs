@@ -1,16 +1,15 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Libraries.Whisper.CTranslate.Tests;
 
-[Collection("Collection")]
-public class WhisperCTranslateTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class WhisperCTranslateTests : HostedUnitTest
 {
-    public WhisperCTranslateTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public WhisperCTranslateTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
